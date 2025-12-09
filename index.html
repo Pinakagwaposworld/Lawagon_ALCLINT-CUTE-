@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Al Clint Notes</h1>
+            <p>Organize your Handsome thougths
+            </p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-bar" id="search-input" placeholder="🔍 Search notes...">
+            
+            <div class="input-group">
+                <input type="text" id="note-input" placeholder="Write your note here...">
+                <select id="category-select">
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="ideas">Ideas</option>
+                    <option value="todo">To-Do</option>
+                </select>
+                <button class="btn btn-primary" id="add-note">Add Note</button>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="personal">Personal</button>
+                <button class="filter-btn" data-filter="work">Work</button>
+                <button class="filter-btn" data-filter="ideas">Ideas</button>
+                <button class="filter-btn" data-filter="todo">To-Do</button>
+            </div>
+        </div>
+
+        <div class="notes-grid" id="notes-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
